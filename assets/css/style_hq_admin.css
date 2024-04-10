@@ -1,0 +1,233 @@
+.hq-pagination {
+  display: flex; }
+  .hq-pagination li {
+    border: 1px solid #84c2ff;
+    padding: 5px 10px;
+    margin: 0; }
+    .hq-pagination li button {
+      text-decoration: none;
+      border: none;
+      background: transparent;
+      outline: none;
+      width: 100%;
+      height: 100%; }
+    .hq-pagination li:hover {
+      background-color: rgba(132, 194, 255, 0.1); }
+    .hq-pagination li.hq-active {
+      background-color: rgba(132, 194, 255, 0.3); }
+    .hq-pagination li:first-child {
+      border-radius: 10px 0 0 10px; }
+    .hq-pagination li:last-child {
+      border-radius: 0 10px 10px 0px;
+      background-color: rgba(132, 194, 255, 0.5); }
+
+.config-width-content .content {
+  display: flex; }
+  .config-width-content .content .fields {
+    display: flex;
+    margin-right: 30px; }
+
+.form-table th {
+  display: none; }
+
+.hq-config-content {
+  padding: 1rem;
+  display: flex; }
+  .hq-config-content .hq-config-side {
+    padding: 0;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.278);
+    background-color: white;
+    overflow: hidden; }
+    .hq-config-content .hq-config-side header {
+      background: blue;
+      padding: 10px;
+      font-weight: 800;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .hq-config-content .hq-config-side .hq-conf-quadro {
+      border: 0.5px solid rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-right: 10px; }
+    .hq-config-content .hq-config-side .hq-quadros-content {
+      padding: 5px;
+      max-height: 700px;
+      overflow-y: auto; }
+      .hq-config-content .hq-config-side .hq-quadros-content .hq-conf-quadro-header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #005cb7;
+        padding: 10px;
+        color: white; }
+      .hq-config-content .hq-config-side .hq-quadros-content .hq-conf-quadro-body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 20px; }
+        .hq-config-content .hq-config-side .hq-quadros-content .hq-conf-quadro-body > div {
+          display: flex;
+          flex-direction: column; }
+        .hq-config-content .hq-config-side .hq-quadros-content .hq-conf-quadro-body > select, .hq-config-content .hq-config-side .hq-quadros-content .hq-conf-quadro-body > input {
+          padding: 20px; }
+
+.hq-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: #004384;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px; }
+  .hq-btn.trash {
+    background-color: transparent;
+    padding: 0;
+    margin: 0; }
+
+.flex-line {
+  display: flex;
+  align-items: center; }
+
+.hq-btn-nav {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: -20px;
+  cursor: pointer; }
+  .hq-btn-nav.prox {
+    right: 20px;
+    left: inherit; }
+
+.hq-page-content-item {
+  display: none; }
+  .hq-page-content-item.hq-active {
+    display: block; }
+
+.hq-page-layout {
+  margin: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border: 0.5px solid #ddd;
+  padding: 20px;
+  position: relative; }
+  .hq-page-layout .trash-pg {
+    position: absolute;
+    top: -5%;
+    right: 0%;
+    z-index: 1000; }
+  .hq-page-layout .page-style {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    height: 100%;
+    width: 100%;
+    gap: 7px; }
+  .hq-page-layout .page-box {
+    width: 100%;
+    height: 100%;
+    border: solid 2px black;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer; }
+    .hq-page-layout .page-box h2 {
+      background: white;
+      /* padding: 20px; */
+      border-radius: 50%;
+      width: 35px;
+      height: 30px;
+      text-align: center;
+      /* vertical-align: middle; */
+      padding-top: 5px; }
+    .hq-page-layout .page-box > div {
+      width: 100%;
+      height: 100%;
+      position: absolute; }
+    .hq-page-layout .page-box .ballon {
+      position: absolute;
+      padding: 10px;
+      top: 0;
+      left: 0;
+      transform-origin: 75% 100%;
+      transform: translate(-35%, -25%) rotate(-180deg) scale(0);
+      transition: transform 0.15s ease-in-out;
+      border: solid 2px black;
+      background-color: white;
+      border-radius: 50px;
+      min-width: 80px;
+      min-height: 20px; }
+      .hq-page-layout .page-box .ballon::after {
+        content: '';
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: 25%;
+        bottom: 0px;
+        background: url("../img/ballon.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: translateY(95%); }
+    .hq-page-layout .page-box:hover .ballon {
+      transform: translate(-35%, -30%) rotate(0deg) !important; }
+  .hq-page-layout .page-content {
+    width: 800px;
+    height: 900px; }
+  .hq-page-layout .page-style .ballon .quad-img {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important; }
+  @media (max-width: 576px) {
+    .hq-page-layout .page-content {
+      width: 100%; } }
+
+.hq-galery-cpt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+  padding: 1.5rem;
+  border: 1px solid lightgray;
+  border-radius: 10px; }
+  .hq-galery-cpt .img-prev-content {
+    width: 120px;
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: gray;
+    position: relative;
+    overflow: hidden; }
+    .hq-galery-cpt .img-prev-content .img-prev {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .hq-galery-cpt .img-prev-content .btn {
+      position: absolute;
+      z-index: 100;
+      right: -5px;
+      width: 15px;
+      padding: 10px; }
+      .hq-galery-cpt .img-prev-content .btn.trash {
+        bottom: -5px;
+        width: 15px;
+        background: #c70000;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        border-radius: 20px 0px 0px 0px; }
+      .hq-galery-cpt .img-prev-content .btn.sortle {
+        top: -5px;
+        left: -5px;
+        background: gray;
+        padding-top: 15px;
+        padding-left: 15px;
+        border-radius: 0px 0px 20px 0px; }
+
+/*# sourceMappingURL=style_hq_admin.css.map */
