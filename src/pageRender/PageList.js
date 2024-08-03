@@ -1,7 +1,7 @@
 import { useState, useEffect } from "@wordpress/element";
 import { Button } from "@wordpress/components";
 
-export default function Pages({
+export function Pages({
   boxList,
   setBox,
   currentBoxId,
@@ -9,7 +9,6 @@ export default function Pages({
   removePage,
   editor = true,
 }) {
-  console.log(config.page_size);
   return (
     <>
       <div

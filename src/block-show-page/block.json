@@ -11,11 +11,6 @@
   "supports": {
     "html": false
   },
-  "attributes": {
-    "teste": {
-      "type": "string"
-    }
-  },
   "textdomain": "block-show-page",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",

@@ -118,6 +118,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// import { creatNewPage, Pages, Box } from "../pageRender/PageList";
 
 function Edit() {
   const {
@@ -154,7 +155,6 @@ function Edit() {
     setCurrentPageId(newId);
     setPagesList(newPgsList);
   };
-  console.log("currentPageId " + currentPageId);
   const handleRemovePage = id => {
     const newPgsList1 = pagesList.filter(pg => {
       return pg.id != currentPageId;
@@ -361,7 +361,6 @@ function HqApp() {
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_Edits__WEBPACK_IMPORTED_MODULE_3__["default"], null);
 }
 const doom = document.getElementById("hq-form-admin");
-console.log(doom);
 (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createRoot)(doom).render((0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(HqApp, null));
 
 /***/ }),
@@ -410,8 +409,8 @@ class configDb {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Box: () => (/* binding */ Box),
-/* harmony export */   creatNewPage: () => (/* binding */ creatNewPage),
-/* harmony export */   "default": () => (/* binding */ Pages)
+/* harmony export */   Pages: () => (/* binding */ Pages),
+/* harmony export */   creatNewPage: () => (/* binding */ creatNewPage)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -430,7 +429,6 @@ function Pages({
   removePage,
   editor = true
 }) {
-  console.log(config.page_size);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "page-content",
     style: {

@@ -66,8 +66,8 @@ function save() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Box: () => (/* binding */ Box),
-/* harmony export */   creatNewPage: () => (/* binding */ creatNewPage),
-/* harmony export */   "default": () => (/* binding */ Pages)
+/* harmony export */   Pages: () => (/* binding */ Pages),
+/* harmony export */   creatNewPage: () => (/* binding */ creatNewPage)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -86,7 +86,6 @@ function Pages({
   removePage,
   editor = true
 }) {
-  console.log(config.page_size);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "page-content",
     style: {
@@ -220,7 +219,7 @@ module.exports = window["wp"]["element"];
   \****************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"line-arte/block-show-page","version":"0.1.0","title":"Block Show Page","category":"widgets","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false},"attributes":{"teste":{"type":"string"}},"textdomain":"block-show-page","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"line-arte/block-show-page","version":"0.1.0","title":"Block Show Page","category":"widgets","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false},"textdomain":"block-show-page","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 

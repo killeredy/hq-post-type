@@ -129,6 +129,7 @@ class PageLayout
     function get_style_tag(){
         $pages = $this->get_pages()['size'];
         $cor =   !empty( $pages ) ? $pages['bg_color'] : 'white';
+        
         ?>
             <style>
 
@@ -170,10 +171,10 @@ class PageLayout
 
     function render_page_front(){
         $pages = $this->get_pages()['pages']; 
-        echo $this->get_style_tag();
-        $notFirst =  false;
         $path_img = plugins_url() . '/hq-post-type/assets/img/angle-right-solid.svg';
+        $notFirst =  false;
         ob_start();  
+        echo $this->get_style_tag();
         ?>
         <style>
             .page-comic-book{
@@ -253,7 +254,10 @@ class PageLayout
          </script>
         <?php
                     
-        return ob_end_flush();
+       	
+	$output = ob_get_contents();
+	ob_end_clean();
+	return $output;
     }
 
    

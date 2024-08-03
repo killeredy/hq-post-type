@@ -3,6 +3,7 @@ import { configDb, PagesOb, boxOb } from "./object";
 import { Panel, PanelBody, Button } from "@wordpress/components";
 import BoxesEdit from "./BoxesEdit";
 import PageConfig from "./PageConfig";
+// import { creatNewPage, Pages, Box } from "../pageRender/PageList";
 import { creatNewPage, Pages } from "../pageRender/PageList";
 
 export default function Edit() {
@@ -42,8 +43,6 @@ export default function Edit() {
     setCurrentPageId(newId);
     setPagesList(newPgsList);
   };
-
-  console.log("currentPageId " + currentPageId);
 
   const handleRemovePage = (id) => {
     const newPgsList1 = pagesList.filter((pg) => {
