@@ -18,8 +18,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'Comic Neue', cursive;
-        font-size: 0.8rem;
 
         * {
             padding: 0;
@@ -57,6 +55,7 @@
         background: white;
         display: flex;
         flex-direction: column;
+        font-family: 'Atma', cursive !important;
 
         @include breakpoint(medium) {
             max-height: 80vh;
@@ -65,12 +64,12 @@
         .hq-detail-content {
 
             &>h2 {
-                font-family: 'Bangers', cursive;
                 font-weight: 400;
                 font-size: 1.7rem;
                 text-align: center;
                 text-transform: uppercase;
                 margin-bottom: 1rem;
+                font-family: 'Bangers', cursive !important;
 
                 @include breakpoint(medium) {
                     font-size: 3rem;
@@ -94,6 +93,7 @@
                 height: 100%;
                 width: 100%;
                 overflow-y: auto;
+                font-size: 1.5rem;
 
                 @include breakpoint(medium) {
                     display: flex;
@@ -154,6 +154,7 @@
                         justify-content: center;
                         align-items: center;
                         border: solid 2px black;
+
 
                         @include breakpoint(medium) {
 

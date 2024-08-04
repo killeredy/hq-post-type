@@ -162,7 +162,8 @@
       background-color: white;
       border-radius: 50px;
       min-width: 80px;
-      min-height: 20px; }
+      min-height: 20px;
+      font-family: 'Bangers', cursive !important; }
       .hq-page-layout .page-box .ballon::after {
         content: '';
         width: 15px;

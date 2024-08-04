@@ -81,12 +81,12 @@ class PageDetalhe
             <!-- <img src="<?php echo $attr['thumb'] ?>" alt="" class="capa" style="width: 100%"> -->
             <div class="box-comic">
                 <div>
-                    <?= $attr['desc'] ?>
+                    <?= wpautop($attr['desc']) ?>
                 </div>
             </div>
             <div class="technics">
-                <p>Autor: <span><?= $attr['autor '] ?></span></p>
-                <p>Quant: <span><?= $attr['qt_pg'] ?></span> pg.</p>
+                <p>Roteiro: <strong><?= $attr['autor'] ?></strong></p>
+                <p><span><?= $attr['qt_pg'] ?></span> pg.</p>
                 <!-- <p><?= $attr['tipo'] ?></p>                    -->
             </div>
 
